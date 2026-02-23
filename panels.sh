@@ -75,7 +75,7 @@ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/loca
 # --- Download Pterodactyl Panel ---
 mkdir -p /var/www/pterodactyl
 cd /var/www/pterodactyl
-curl -Lo panel.tar.gz https://github.com/ytmcnet-byte/casa-og-panel/releases/latest/download/panel.tar.gz
+curl -Lo panel.tar.gz https://github.com/ytmcnet-byte/casa-og-panel/releases/download/1.12.1/panel.tar.gz
 tar -xzvf panel.tar.gz
 chmod -R 755 storage/* bootstrap/cache/
 
