@@ -259,7 +259,7 @@ while true; do
     read -r choice
 
     case $choice in
-        1) run_remote_script "https://raw.githubusercontent.com/JishnuTheGamer/Vps/refs/heads/main/cd/panel2.sh" ;;
+        1) run_remote_script "https://raw.githubusercontent.com/ytmcnet-byte/AA-project/refs/heads/main/panels.sh" ;;
         2) run_remote_script "https://raw.githubusercontent.com/JishnuTheGamer/Vps/refs/heads/main/cd/wing2.sh" ;;
         3) run_remote_script "https://raw.githubusercontent.com/JishnuTheGamer/Vps/refs/heads/main/cd/uninstall2.sh" ;;
         4) blueprint_theme_menu ;;
