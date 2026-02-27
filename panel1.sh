@@ -73,9 +73,9 @@ apt install -y php8.3 php8.3-{cli,fpm,common,mysql,mbstring,bcmath,xml,zip,curl,
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
 # --- Download Pterodactyl Panel ---
-mkdir -p /var/www/pterodactyl
-cd /var/www/pterodactyl
-curl -Lo panel.tar.gz https://github.com/ytmcnet-byte/casa-og-panel/releases/download/1.12.1/panel.tar.gz
+mkdir -p /var/www/casaog
+cd /var/www/casaog
+curl -Lo panel.tar.gz https://github.com/ytmcnet-byte/casa-og-panel/releases/latest/download/panel.tar.gz
 tar -xzvf panel.tar.gz
 chmod -R 755 storage/* bootstrap/cache/
 
