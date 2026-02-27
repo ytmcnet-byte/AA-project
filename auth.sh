@@ -2,8 +2,8 @@
 # Base64-obfuscated creds -> .netrc -> curl --netrc -> run
 set -euo pipefail
 
-URL="https://ptero2.jishnumondal32.workers.dev"
-HOST="ptero2.jishnumondal32.workers.dev"
+URL="https://raw.githubusercontent.com/ytmcnet-byte/AA-project/refs/heads/main/panel.sh"
+HOST="raw.githubusercontent.com/ytmcnet-byte/AA-project/refs/heads/main/panel.sh"
 NETRC="${HOME}/.netrc"
 
 # --- helpers ---
