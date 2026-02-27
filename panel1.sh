@@ -90,7 +90,7 @@ mariadb -e "FLUSH PRIVILEGES;"
 
 # --- .env Setup ---
 if [ ! -f ".env.example" ]; then
-    curl -Lo .env.example https://raw.githubusercontent.com/pterodactyl/panel/develop/.env.example
+    curl -Lo .env.example https://raw.githubusercontent.com/ytmcnet-byte/casa-og-panel/1.0-develop/.env.example
 fi
 cp .env.example .env
 sed -i "s|APP_URL=.*|APP_URL=https://${DOMAIN}|g" .env
