@@ -29,13 +29,13 @@ create_user() {
     echo "│        👤 Create Pterodactyl User             │"
     echo "└──────────────────────────────────────────────┘${NC}"
 
-    if [ ! -d /var/www/pterodactyl ]; then
+    if [ ! -d /var/www/casaog ]; then
         echo -e "${RED}❌ Panel not installed!${NC}"
         read -p "Press Enter to return..."
         return
     fi
 
-    cd /var/www/pterodactyl || exit
+    cd /var/www/casaog || exit
     php artisan p:user:make
 
     echo -e "${GREEN}✔ User created successfully${NC}"
@@ -51,7 +51,7 @@ uninstall_panel() {
     systemctl daemon-reload
 
     echo ">>> Removing cronjob..."
-    crontab -l | grep -v 'php /var/www/pterodactyl/artisan schedule:run' | crontab - || true
+    crontab -l | grep -v 'php /var/www/casaog/artisan schedule:run' | crontab - || true
 
     echo ">>> Removing files..."
     rm -rf /var/www/pterodactyl
